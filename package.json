@@ -2,7 +2,7 @@
   "name": "workshop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://h182032.github.io/workshop",
+  "homepage": "https://h182032.github.io/Workshop",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.7.0",
