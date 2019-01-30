@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { getMovieList } from './api';
 import './MovieList.css';
 import Filter from './Filter.js';
+import Image from './Image/thumb.png';
 
 class MovieList extends Component {
     constructor(props) {
@@ -40,6 +41,7 @@ class MovieList extends Component {
     return (
       <div className="wrapper">
         <h1>Ghibli movies</h1>
+        <img src={Image} />
         <table>
         <thead>
   <tr>
@@ -60,8 +62,8 @@ class MovieList extends Component {
 </thead>
           <tbody>
             {movies.map(({ id, title, description, director, producer, release_date, rt_score }) => <tr key={id} >
-              <td>{title}</td>
-              <td>{description}</td>
+              <td><b>{title}</b></td>
+              <td><i>{description}</i></td>
               <td>{director}</td>
               <td>{producer}</td>
               <td className="number">{release_date}</td>
